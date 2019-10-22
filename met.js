@@ -14,10 +14,10 @@ function getArt(objectID, callback){
             else {
                 if (data.total == 0){
                     callback(404)
-                } else{
+                }               
+                else{
                     callback(data.objectIDs[0], undefined)
-                }
-               
+                }              
             }
           
         }
