@@ -36,7 +36,7 @@ router.get('/students/:id', function(req, res){
 
 })
 
-router.get('/met/search?', function(req, res){
+router.get('/met', function(req, res){
     met.getArt(req.query.search, function(result){
         if (result == 404){
             res.json({
